@@ -1,1 +1,62 @@
-Hello world
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página Profissional">
+    <title>Nome - Página Profissional</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        a {
+            color: #0077b5;
+            text-decoration: none;
+        }
+        .downloads a {
+            background-color: #0077b5;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-block;
+            margin: 5px 0;
+        }
+        .downloads a:hover {
+            background-color: #005f86;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Nome Completo</h1>
+        <p>Bem-vindo à minha página profissional! Aqui você encontrará meu currículo e materiais para download.</p>
+
+        <h2>LinkedIn</h2>
+        <p>Visite meu perfil no LinkedIn para saber mais sobre minha experiência profissional e conectar-se comigo: 
+            <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">Meu LinkedIn</a>
+        </p>
+
+        <h2>Materiais para Download</h2>
+        <div class="downloads">
+            <p>Aqui estão alguns materiais que podem ser úteis para estudantes:</p>
+            <a href="materiais/materia1.pdf" download>Download Material 1</a><br>
+            <a href="materiais/materia2.pdf" download>Download Material 2</a>
+        </div>
+    </div>
+</body>
+</html>
