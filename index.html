@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Meu Site</title>
 </head>
@@ -11,46 +13,67 @@
         <nav>
             <div class="logo">Meu Logo</div>
             <ul class="nav-links">
-                <!-- <li><a href="#sobre">Sobre</a></li> -->
-                <li><a href="#research">Research</a></li>
-                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- <section class="hero">
-        <h1>Bem-vindo ao Meu Site</h1>
-         <p>Aqui você encontrará informações sobre mim e meus projetos.</p>
-        <a href="#projetos" class="btn">Veja Projetos</a> 
-    </section> -->
 
     <section id="sobre">
         <h2>Sobre Mim</h2>
         <p>Descrição sobre você e suas habilidades.</p>
     </section>
 
-    <section id="teaching">
-        <h2>Teaching</h2>
-        <div class="project">
-            <h3>Projeto 1</h3>
-            <p>Descrição do projeto 1.</p>
-            <a href="#" class="btn">Ver Detalhes</a>
-        </div>
-        <div class="project">
-            <h3>Projeto 2</h3>
-            <p>Descrição do projeto 2.</p>
-            <a href="#" class="btn">Ver Detalhes</a>
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Projeto 1
+                            <i class="fa fa-chevron-down float-right"></i>
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Descrição do Projeto 1. Aqui você pode adicionar informações adicionais sobre o projeto.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Projeto 2
+                            <i class="fa fa-chevron-down float-right"></i>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Descrição do Projeto 2. Aqui você pode adicionar informações adicionais sobre o projeto.
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="contato">
-        <h2>Contact</h2>
-        <p>praissa@fe.up.pt</p>
+        <h2>Contato</h2>
+        <p>Informações de contato ou formulário.</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Paula Raissa. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Meu Nome. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
