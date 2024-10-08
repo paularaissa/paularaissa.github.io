@@ -3,60 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página Profissional">
-    <title>Nome - Página Profissional</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #333;
-        }
-        a {
-            color: #0077b5;
-            text-decoration: none;
-        }
-        .downloads a {
-            background-color: #0077b5;
-            color: #fff;
-            padding: 10px 15px;
-            border-radius: 5px;
-            text-align: center;
-            display: inline-block;
-            margin: 5px 0;
-        }
-        .downloads a:hover {
-            background-color: #005f86;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>Meu Site</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Nome Completo</h1>
-        <p>Bem-vindo à minha página profissional! Aqui você encontrará meu currículo e materiais para download.</p>
+    <header>
+        <nav>
+            <div class="logo">Meu Logo</div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <h2>LinkedIn</h2>
-        <p>Visite meu perfil no LinkedIn para saber mais sobre minha experiência profissional e conectar-se comigo: 
-            <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">Meu LinkedIn</a>
-        </p>
+    <section class="hero">
+        <h1>Bem-vindo ao Meu Site</h1>
+        <p>Aqui você encontrará informações sobre mim e meus projetos.</p>
+        <a href="#projetos" class="btn">Veja Projetos</a>
+    </section>
 
-        <h2>Materiais para Download</h2>
-        <div class="downloads">
-            <p>Aqui estão alguns materiais que podem ser úteis para estudantes:</p>
-            <a href="materiais/materia1.pdf" download>Download Material 1</a><br>
-            <a href="materiais/materia2.pdf" download>Download Material 2</a>
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Descrição sobre você e suas habilidades.</p>
+    </section>
+
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="project">
+            <h3>Projeto 1</h3>
+            <p>Descrição do projeto 1.</p>
+            <a href="#" class="btn">Ver Detalhes</a>
         </div>
-    </div>
+        <div class="project">
+            <h3>Projeto 2</h3>
+            <p>Descrição do projeto 2.</p>
+            <a href="#" class="btn">Ver Detalhes</a>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Informações de contato ou formulário.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Meu Nome. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
